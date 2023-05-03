@@ -6,13 +6,23 @@ void main() {
       appBar: AppBar(
         title: const Text("你好flutter"),
       ),
-      body: const Center(
-        child: Text(
-          "我是内容",
-          textDirection: TextDirection.ltr,
-          style: TextStyle(color: Colors.red, fontSize: 40),
-        ),
-      ),
+      body: const MyApp(),
     ),
   ));
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return const Center(
+      child: Text(
+        "我是一个自定义组件",
+        textDirection: TextDirection.ltr,
+        style: TextStyle(color: Colors.red, fontSize: 40),
+      ),
+    );
+  }
 }
