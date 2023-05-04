@@ -1,0 +1,16 @@
+{
+  "id": "4047902",
+  "name": "app",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6556787",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

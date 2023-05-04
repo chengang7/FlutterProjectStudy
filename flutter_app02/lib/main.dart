@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app02/fonts/iconfont.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -17,6 +18,19 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return const Text("你好Flutter");
+    return Column(
+      children: const [
+        SizedBox(height: 20,),
+        Icon(Icons.home,size: 40,color: Colors.yellow,),
+        SizedBox(height: 20,),
+        Icon(Icons.settings),
+        SizedBox(height: 20,),
+        Icon(Icons.search),
+        SizedBox(height: 20,),
+        Icon(Icons.person),
+        SizedBox(height: 20,),
+        Icon(IconFont.weixin,size: 40,color: Colors.green,),
+      ],
+    );
   }
 }
