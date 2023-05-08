@@ -17,70 +17,44 @@ class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      padding: const EdgeInsets.all(10),
-      children: <Widget>[
-        Image.network("https://www.itying.com/images/flutter/1.png"),
-        Container(
-          padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
-          height: 44,
-          child: const Text(
-            "我是一个文本",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22),
+    return SizedBox(
+      height: 120,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.all(10),
+        children: <Widget>[
+          Container(
+            height: 120,
+            width: 120,
+            decoration: const BoxDecoration(color: Colors.red),
           ),
-        ),
-        Image.network("https://www.itying.com/images/flutter/2.png"),
-        Container(
-          padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
-          height: 44,
-          child: const Text(
-            "我是一个文本",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22),
+          Container(
+            height: 120,
+            width: 120,
+            decoration: const BoxDecoration(color: Colors.yellow),
           ),
-        ),
-        Image.network("https://www.itying.com/images/flutter/3.png"),
-        Container(
-          padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
-          height: 44,
-          child: const Text(
-            "我是一个文本",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22),
+          Container(
+            height: 120,
+            width: 120,
+            decoration: const BoxDecoration(color: Colors.green),
           ),
-        ),
-        Image.network("https://www.itying.com/images/flutter/4.png"),
-        Container(
-          padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
-          height: 44,
-          child: const Text(
-            "我是一个文本",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22),
+          Container(
+            height: 120,
+            width: 120,
+            decoration: const BoxDecoration(color: Colors.blue),
           ),
-        ),
-        Image.network("https://www.itying.com/images/flutter/5.png"),
-        Container(
-          padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
-          height: 44,
-          child: const Text(
-            "我是一个文本",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22),
+          Container(
+            height: 120,
+            width: 120,
+            decoration: const BoxDecoration(color: Colors.black),
           ),
-        ),
-        Image.network("https://www.itying.com/images/flutter/6.png"),
-        Container(
-          padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
-          height: 44,
-          child: const Text(
-            "我是一个文本",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22),
-          ),
-        ),
-      ],
+          Container(
+            height: 120,
+            width: 120,
+            decoration: const BoxDecoration(color: Colors.orange),
+          )
+        ],
+      ),
     );
   }
 }
