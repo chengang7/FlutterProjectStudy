@@ -17,19 +17,50 @@ class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return Column(
-      children: const [
-        SizedBox(height: 20,),
-        Icon(Icons.home,size: 40,color: Colors.yellow,),
-        SizedBox(height: 20,),
-        Icon(Icons.settings),
-        SizedBox(height: 20,),
-        Icon(Icons.search),
-        SizedBox(height: 20,),
-        Icon(Icons.person),
-        SizedBox(height: 20,),
-        Icon(IconFont.weixin,size: 40,color: Colors.green,),
+    return ListView(
+      children: const <Widget>[
+        ListTile(
+          leading: Icon(Icons.home),
+          title: Text("首页"),
+          trailing: Icon(Icons.chevron_right),
+        ),
+        Divider(),
+        ListTile(
+          leading: Icon(
+            Icons.assignment,
+            color: Colors.red,
+          ),
+          title: Text("全部订单"),
+          trailing: Icon(Icons.chevron_right),
+        ),
+        Divider(),
+        ListTile(
+          leading: Icon(
+            Icons.payment,
+            color: Colors.green,
+          ),
+          title: Text("待付款"),
+          trailing: Icon(Icons.chevron_right),
+        ),
+        Divider(),
+        ListTile(
+          leading: Icon(
+            Icons.favorite,
+            color: Colors.lightGreen,
+          ),
+          title: Text("我的收藏"),
+          trailing: Icon(Icons.chevron_right),
+        ),
+        Divider(),
+        ListTile(
+          leading: Icon(
+            Icons.people,
+            color: Colors.black54,
+          ),
+          title: Text("在线客服"),
+          trailing: Icon(Icons.chevron_right),
+        ),
+        Divider(),
       ],
     );
   }
