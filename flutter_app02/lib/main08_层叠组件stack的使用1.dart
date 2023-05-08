@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
           height: 200,
           color: Colors.yellow,
         ),
-        const Text("你好 flutter"),
+        const Text("你好 flutter1"),
       ],
     );
   }
