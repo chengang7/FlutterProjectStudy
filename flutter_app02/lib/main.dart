@@ -8,18 +8,28 @@ void main() {
       appBar: AppBar(
         title: const Text("Flutter App"),
       ),
-      body: const MyHomePage(),
+      body: const GridViewCount(),
     ),
   ));
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+//使用gridview.count实现网格布局
+class GridViewCount extends StatelessWidget {
+  const GridViewCount({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 120,
-      child: ListView(),
+    return GridView.count(
+      //一行widget的数量
+      crossAxisCount: 3,
+      children: const [
+        Icon(Icons.home),
+        Icon(Icons.settings),
+        Icon(Icons.search),
+        Icon(Icons.person),
+        Icon(Icons.cabin),
+        Icon(Icons.cable),
+      ],
     );
   }
 }
