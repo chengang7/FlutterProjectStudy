@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app02/fonts/iconfont.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -18,8 +17,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //获取屏幕的宽高
-    final size = MediaQuery.of(context).size;
     //需求：页面上一个容器，宽度是屏幕的宽度，高度是宽度的一半
     return AspectRatio(
       aspectRatio: 2 / 1,

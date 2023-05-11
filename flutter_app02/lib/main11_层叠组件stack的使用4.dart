@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app02/fonts/iconfont.dart';
 
 void main() {
   runApp(MaterialApp(
