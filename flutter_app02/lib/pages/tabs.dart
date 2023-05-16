@@ -31,16 +31,32 @@ class _TabsState extends State<Tabs> {
       ),
       drawer: Drawer(
         child: Column(
-          children: const [
-            SizedBox(
-              height: 60,
+          children: [
+            Row(
+              children: const [
+                Expanded(
+                    flex: 1,
+                    child: UserAccountsDrawerHeader(
+                      accountName: Text("Cg"),
+                      accountEmail: Text("cg@qq.com"),
+                      currentAccountPicture: CircleAvatar(
+                        backgroundImage: NetworkImage(
+                            "https://www.itying.com/images/flutter/3.png"),
+                      ),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: NetworkImage(
+                                  "https://www.itying.com/images/flutter/1.png"))),
+                    ))
+              ],
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.people),
               title: Text("个人中心"),
             ),
-            Divider(),
-            ListTile(
+            const Divider(),
+            const ListTile(
               leading: Icon(Icons.settings),
               title: Text("系统设置"),
             )
